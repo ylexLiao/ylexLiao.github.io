@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ylex's Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .header-banner {
+            background-image: url("/Users/ylex_liao/Desktop/ylexLiao_github_io/app/src/assets/bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s ease, opacity 1s ease;
+        }
+        .header-banner-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .header-banner-info__title {
+            font-size: 70px;
+            font-weight: bold;
+            font: italic small-caps bold 60px cursive;
+        }
+        .header-banner-arrow {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .header-banner-arrow__icon {
+            font-size: 24px;
+            color: white;
+        }
+        #navbar {
+            display: none;
+            background-color: #333;
+            overflow: hidden;
+        }
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        #navbar ul li {
+            float: left;
+        }
+        #navbar ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover {
+            background-color: #111;
+        }
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-banner" id="welcome-screen">
+        <div class="header-banner-info">
+            <div class="header-banner-info__title">Welcome to Ylex's page</div>
+        </div>
+        <div class="header-banner-arrow">
+            <div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- This is where your blog content will go -->
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            const welcomeScreen = document.getElementById('welcome-screen');
+            const navbar = document.getElementById('navbar');
+            const content = document.getElementById('content');
+
+            // Scale up the header banner
+            setTimeout(() => {
+                welcomeScreen.style.transform = 'scale(1.5)';
+                welcomeScreen.style.opacity = '0';
+            }, 500);
+
+            // Hide the welcome screen and show the navbar after the animation
+            setTimeout(() => {
+                welcomeScreen.style.display = 'none';
+                navbar.style.display = 'block';
+                content.style.display = 'block';
+            }, 2000);  // 2000ms equals to 2 seconds
+        });
+    </script>
+</body>
+</html>
