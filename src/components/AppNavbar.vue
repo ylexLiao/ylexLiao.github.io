@@ -1,11 +1,11 @@
 <template>
-  <div class="header-banner" id="welcome-screen">
-        <div class="header-banner-info">
-            <div class="header-banner-info__title">Welcome to Ylex's page</div>
-        </div>
-        <div class="header-banner-arrow">
-            <div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div>
-        </div>
+  <div v-if="showWelcomeScreen" class="header-banner" id="welcome-screen">
+      <div class="header-banner-info">
+        <div class="header-banner-info__title">Welcome to Ylex's page</div>
+      </div>
+      <div class="header-banner-arrow">
+        <div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div>
+      </div>
     </div>
   <nav>
   <b-navbar toggleable="lg" v-bind:class="{ 'hide-navbar': isHidden }" fixed="top" class="navbar" style="background-color: #e3f2fd;">
@@ -150,7 +150,7 @@ export default {
 </style>
 
 
-<script>
+<!-- <script>
         window.addEventListener('load', function() {
             const welcomeScreen = document.getElementById('welcome-screen');
             const navbar = document.getElementById('navbar');
@@ -169,4 +169,25 @@ export default {
                 content.style.display = 'block';
             }, 2000);  // 2000ms equals to 2 seconds
         });
-    </script>
+    </script> -->
+
+<script>
+export default {
+  data() {
+    return {
+      showWelcomeScreen: true
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      const welcomeScreen = document.getElementById('welcome-screen');
+      welcomeScreen.style.transform = 'scale(1.5)';
+      welcomeScreen.style.opacity = '0';
+    }, 500);
+
+    setTimeout(() => {
+      this.showWelcomeScreen = false;
+    }, 2000);  // 2000ms equals to 2 seconds
+  }
+};
+</script>
