@@ -20,7 +20,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#education" class="nav-link">Research</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -36,6 +36,9 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-image-mobile">
+                    <img src="img/GitMyIMG.jpeg" alt="YLex Liao" class="profile-image-mobile">
+                </div>
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">YLex Liao</span>
                 </h1>
@@ -43,33 +46,57 @@
                     <span>Computer Science Student</span>
                 </div>
                 <p class="hero-description">
-                    Currently studying at Hong Kong Polytechnic University, 
-                    passionate about AI, machine learning, and building innovative solutions.
+                    MSc student at Hong Kong Polytechnic University with a background in Computer Science(AI Concentration) from Hong Kong Baptist University. Passionate about AI, machine learning, and immersive technologies.
                 </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <img src="img/code-icon.svg" alt="" class="btn-icon">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <img src="img/mail-icon.svg" alt="" class="btn-icon">
+                        Get In Touch
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-controls">
-                            <span class="control close"></span>
-                            <span class="control minimize"></span>
-                            <span class="control maximize"></span>
+                <div class="profile-card">
+                    <img src="img/GitMyIMG.jpeg" alt="YLex Liao" class="profile-image">
+                    <div class="profile-info">
+                        <h3>YLex Liao</h3>
+                        <p>Computer Science Student</p>
+                        <div class="profile-location">
+                            <img src="img/map-pin-icon.svg" alt="" class="location-icon">
+                            <span>Hong Kong</span>
                         </div>
-                        <span class="window-title">welcome.js</span>
                     </div>
-                    <div class="code-content">
-                        <pre><code>console.log("Hello, World!");
-const developer = {
-  name: "YLex Liao",
-  skills: ["AI", "ML", "Web Dev"],
-  passion: "Problem Solving"
-};
-
-console.log(developer);</code></pre>
+                </div>
+                <div class="floating-cards">
+                    <div class="floating-card" style="--delay: 0s">
+                        <img src="img/code-icon.svg" alt="" class="card-icon">
+                        <span>Full Stack Dev</span>
+                    </div>
+                    <div class="floating-card" style="--delay: 1s">
+                        <img src="img/cpu-icon.svg" alt="" class="card-icon">
+                        <span>AI & ML</span>
+                    </div>
+                    <div class="floating-card" style="--delay: 2s">
+                        <img src="img/database-icon.svg" alt="" class="card-icon">
+                        <span>Data Science</span>
                     </div>
                 </div>
             </div>
@@ -80,47 +107,199 @@ console.log(developer);</code></pre>
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <div class="about-grid">
                 <div class="about-text">
-                    <p>
-                        I'm a Computer Science student at Hong Kong Polytechnic University with a passion for 
-                        artificial intelligence and machine learning. I enjoy tackling complex problems and 
-                        building innovative solutions that make a real impact.
-                    </p>
-                    <p>
-                        My journey in technology has led me to work on diverse projects ranging from 
-                        food recognition systems to game development, always with a focus on learning 
-                        cutting-edge technologies and best practices.
-                    </p>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Programming Languages</h3>
-                            <div class="skills">
-                                <span class="skill">Python</span>
-                                <span class="skill">JavaScript</span>
-                                <span class="skill">Java</span>
-                                <span class="skill">C++</span>
-                                <span class="skill">HTML/CSS</span>
+                    <div class="about-intro">
+                        <h3>Hello! I'm YLex Liao</h3>
+                        <p>
+                            I'm a passionate MSc student at Hong Kong Polytechnic University with a background in Computer Science(AI Concentration) from Hong Kong Baptist University. My research interests span artificial intelligence, machine learning, and immersive technologies, supported by hands-on work in deep learning and Unity (2D & 3D).
+                        </p>
+                        <p>
+                            I've contributed to cutting-edge research during internships and gained industry exposure at Microsoft AI Co-Innovation Lab. I'm passionate about leveraging AI and game development to shape innovative metaverse experiences.
+                        </p>
+                    </div>
+                    
+                    <div class="achievements">
+                        <h3>Key Achievements</h3>
+                        <div class="achievement-list">
+                            <div class="achievement-item">
+                                <img src="img/award-icon.svg" alt="" class="achievement-icon">
+                                <div>
+                                    <h4>Microsoft AI Internship</h4>
+                                    <p>Selected for competitive AI research program</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <img src="img/code-icon.svg" alt="" class="achievement-icon">
+                                <div>
+                                    <h4>15+ Projects Completed</h4>
+                                    <p>Range from AI to full-stack applications</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <img src="img/trending-up-icon.svg" alt="" class="achievement-icon">
+                                <div>
+                                    <h4>Global Game Jam Participant</h4>
+                                    <p>48-hour game development challenge</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-categories">
                         <div class="skill-category">
-                            <h3>Technologies & Frameworks</h3>
-                            <div class="skills">
-                                <span class="skill">Vue.js</span>
-                                <span class="skill">React</span>
-                                <span class="skill">Node.js</span>
-                                <span class="skill">TensorFlow</span>
-                                <span class="skill">PyTorch</span>
+                            <h4>Programming Languages</h4>
+                            <div class="skills-progress">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <img src="img/python-icon.svg" alt="Python" class="skill-logo">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-width="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <img src="img/javascript.svg" alt="JavaScript" class="skill-logo">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <img src="img/java.svg" alt="Java" class="skill-logo">
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <img src="img/csharp.svg" alt="C#" class="skill-logo">
+                                        <span class="skill-name">C#</span>
+                                        <span class="skill-percentage">60%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-width="60"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <img src="img/html.svg" alt="HTML/CSS" class="skill-logo">
+                                        <span class="skill-name">HTML/CSS</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-fill" data-width="85"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-category">
-                            <h3>Areas of Interest</h3>
-                            <div class="skills">
-                                <span class="skill">Machine Learning</span>
-                                <span class="skill">Computer Vision</span>
-                                <span class="skill">Web Development</span>
-                                <span class="skill">Game Development</span>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frameworks-section">
+            <h3>Frameworks & Tools</h3>
+            <div class="skills-grid">
+                <div class="skill-badge">
+                    <img src="img/tensorflow.svg" alt="TensorFlow" class="skill-icon">
+                    <span>TensorFlow</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/pytorch.svg" alt="PyTorch" class="skill-icon">
+                    <span>PyTorch</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/vue.svg" alt="Vue.js" class="skill-icon">
+                    <span>Vue.js</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/react.svg" alt="React" class="skill-icon">
+                    <span>React</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/unity.svg" alt="Unity" class="skill-icon">
+                    <span>Unity</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/mongodb.svg" alt="MongoDB" class="skill-icon">
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/git.svg" alt="Git" class="skill-icon">
+                    <span>Git</span>
+                </div>
+                <div class="skill-badge">
+                    <img src="img/opencv.svg" alt="OpenCV" class="skill-icon">
+                    <span>OpenCV</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- 教育和研究时间线 -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Research</h2>
+            <div class="timeline">
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <img src="img/ML.svg" alt="" class="timeline-icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Science (Hons)</h3>
+                            <h4>Hong Kong Baptist University</h4>
+                            <span class="timeline-date">2020 - 2024</span>
+                            <p>Graduated with honors in Computer Science. Specialized in artificial intelligence and software development with strong foundation in algorithms and data structures.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <img src="img/star-icon.svg" alt="" class="timeline-icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Intern AI Engineer</h3>
+                            <h4>Microsoft AI Co-Innovation Lab</h4>
+                            <span class="timeline-date">Summer 2023</span>
+                            <p>Gained industry exposure focusing on AI applications. Developed ballet pose recognition system using computer vision techniques.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <img src="img/Research.svg" alt="" class="timeline-icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant (ML)</h3>
+                            <h4>Hong Kong Baptist University</h4>
+                            <span class="timeline-date">Summer 2023</span>
+                            <p>Contributed to cutting-edge research developing machine learning solutions. Focused on computer vision and deep learning applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <img src="img/Metaverse.svg" alt="" class="timeline-icon">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>MSc in Metaverse Technology</h3>
+                            <h4>Hong Kong Polytechnic University</h4>
+                            <span class="timeline-date">2024 - Present</span>
+                            <p>Currently pursuing Master's degree focusing on immersive technologies, AI integration in virtual environments, and Unity development.</p>
                         </div>
                     </div>
                 </div>
@@ -132,77 +311,267 @@ console.log(developer);</code></pre>
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- 项目过滤器 -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="game">Game Dev</button>
+            </div>
+            
             <div class="projects-grid">
                 
-                <div class="project-card">
+                <!-- Food Recognition System -->
+                <div class="project-card" data-category="ai">
                     <div class="project-image">
-                        <div class="project-placeholder">🍽️</div>
+                        <img src="img/model2_00.png" alt="Food Recognition System" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Food Recognition System</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://ylexliao.github.io/FYP-Food-Recognition-System/" target="_blank" class="project-btn">
+                                    <img src="img/external-link-icon.svg" alt="" class="btn-icon">
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/ylexLiao/FYP-Food-Recognition-System" target="_blank" class="project-btn btn-secondary">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Food Recognition System</h3>
-                        <p>Final Year Project - AI-powered food recognition system using computer vision and deep learning.</p>
+                        <div class="project-header">
+                            <h3>Food Recognition System</h3>
+                            <div class="project-status">
+                                <span class="status-badge featured">Featured</span>
+                            </div>
+                        </div>
+                        <p>Final Year Project - AI-powered food recognition system using computer vision and deep learning techniques. Achieves 92% accuracy on diverse food datasets.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>TensorFlow</span>
                             <span>Computer Vision</span>
+                            <span>Deep Learning</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://ylexliao.github.io/FYP-Food-Recognition-System/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/ylexLiao/FYP-Food-Recognition-System" target="_blank">GitHub</a>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <img src="img/star-icon.svg" alt="" class="stat-icon">
+                                <span>92% Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <img src="img/database-icon.svg" alt="" class="stat-icon">
+                                <span>10K+ Images</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Ballet Pose Recognition -->
+                <div class="project-card" data-category="ai">
                     <div class="project-image">
-                        <div class="project-placeholder">🩰</div>
+                        <img src="img/ballet.png" alt="Ballet Pose Recognition" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Ballet Pose Recognition</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/Ballet_pose_recognition" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Ballet Pose Recognition</h3>
-                        <p>Microsoft AI & IoT Insider Labs internship project for recognizing and analyzing ballet poses.</p>
+                        <div class="project-header">
+                            <h3>Ballet Pose Recognition</h3>
+                            <div class="project-status">
+                                <span class="status-badge internship">Internship</span>
+                            </div>
+                        </div>
+                        <p>Microsoft AI & IoT Insider Labs internship project for recognizing and analyzing ballet poses using computer vision.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>OpenCV</span>
                             <span>Machine Learning</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ylexLiao/Ballet_pose_recognition" target="_blank">GitHub</a>
+                            <span>Pose Detection</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Game Recommendation System -->
+                <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <div class="project-placeholder">🎮</div>
+                        <img src="img/TTYS.png" alt="Game Recommendation System" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Game Recommendation System</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/COMP4135-Too-Young-Too-Simple-Game-Recommendation" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Game Recommendation System</h3>
-                        <p>Personalized game recommendation system based on user preferences and gaming behavior.</p>
+                        <div class="project-header">
+                            <h3>Game Recommendation System</h3>
+                            <div class="project-status">
+                                <span class="status-badge academic">Academic</span>
+                            </div>
+                        </div>
+                        <p>Personalized game recommendation system based on user preferences and gaming behavior analysis.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Machine Learning</span>
+                            <span>Web Development</span>
                             <span>Data Analysis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ylexLiao/COMP4135-Too-Young-Too-Simple-Game-Recommendation" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- Global Game Jam -->
+                <div class="project-card" data-category="game">
                     <div class="project-image">
-                        <div class="project-placeholder">🔒</div>
+                        <img src="img/TBA.png" alt="The Bubble's Age" onerror="this.parentElement.innerHTML='<div class=project-placeholder>The Bubble\'s Age</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/GGJ_TBA" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Secure File Management</h3>
-                        <p>Web application for secure file encryption, decryption, and key management.</p>
+                        <div class="project-header">
+                            <h3>The Bubble's Age</h3>
+                            <div class="project-status">
+                                <span class="status-badge competition">Competition</span>
+                            </div>
+                        </div>
+                        <p>48-hour Global Game Jam project. Created a complete game demo with innovative gameplay mechanics.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Development</span>
+                            <span>48h Challenge</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VR FPS Game -->
+                <div class="project-card" data-category="game">
+                    <div class="project-image">
+                        <img src="img/BFA.png" alt="Battle for the Abyss" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Battle for the Abyss</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/COMP5424-Group-India" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Battle for the Abyss</h3>
+                            <div class="project-status">
+                                <span class="status-badge academic">Academic</span>
+                            </div>
+                        </div>
+                        <p>Metaverse VR FPS game with immersive combat mechanics and objective-based gameplay.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>VR Development</span>
+                            <span>C#</span>
+                            <span>3D Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Detection System -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="img/faceDet.png" alt="AI Image Detection" onerror="this.parentElement.innerHTML='<div class=project-placeholder>AI Image Detection</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/Distinguishing-Real-from-AI-Generated-Images-Prototype" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI Image Detection</h3>
+                            <div class="project-status">
+                                <span class="status-badge research">Research</span>
+                            </div>
+                        </div>
+                        <p>Deep learning prototype to distinguish real from AI-generated images using advanced pattern recognition.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Pattern Recognition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Translation -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="img/translation.png" alt="Transformer Translation" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Transformer Translation</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/Machine-Translation-Based-on-Transformer" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Transformer Translation</h3>
+                            <div class="project-status">
+                                <span class="status-badge academic">Academic</span>
+                            </div>
+                        </div>
+                        <p>Implementation of Transformer model for English-French translation with attention mechanisms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Transformer</span>
+                            <span>NLP</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secure File Management -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="img/security.png" alt="Secure File Management" onerror="this.parentElement.innerHTML='<div class=project-placeholder>Secure File Management</div>'">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="https://github.com/ylexLiao/secure-file-management-system" target="_blank" class="project-btn">
+                                    <img src="img/github-icon.svg" alt="" class="btn-icon">
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Secure File Management</h3>
+                            <div class="project-status">
+                                <span class="status-badge personal">Personal</span>
+                            </div>
+                        </div>
+                        <p>Web application for secure file encryption, decryption, and key management with modern security practices.</p>
                         <div class="project-tech">
                             <span>Web Development</span>
                             <span>Cryptography</span>
                             <span>Security</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ylexLiao/secure-file-management-system" target="_blank">GitHub</a>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -224,15 +593,15 @@ console.log(developer);</code></pre>
                 </div>
                 <div class="contact-links">
                     <a href="mailto:ylexyj.liao@connect.polyu.hk" class="contact-link">
-                        <span class="contact-icon">📧</span>
+                        <img src="img/mail-icon.svg" alt="" class="contact-icon">
                         <span>Email</span>
                     </a>
                     <a href="https://github.com/ylexLiao" target="_blank" class="contact-link">
-                        <span class="contact-icon">💻</span>
+                        <img src="img/github-icon.svg" alt="" class="contact-icon">
                         <span>GitHub</span>
                     </a>
                     <a href="https://www.linkedin.com/in/ylexliao" target="_blank" class="contact-link">
-                        <span class="contact-icon">💼</span>
+                        <img src="img/linkedin-icon.svg" alt="" class="contact-icon">
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -243,7 +612,7 @@ console.log(developer);</code></pre>
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 YLex Liao. Built with passion and code.</p>
+            <p>&copy; 2025 YLex. Built with passion and code.</p>
         </div>
     </footer>
 
