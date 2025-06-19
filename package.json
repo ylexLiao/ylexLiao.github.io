@@ -562,8 +562,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "vue-cli-service serve --open --port 8080",
-    "build": "vue-cli-service build"
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",

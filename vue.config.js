@@ -1,23 +1,16 @@
-// const { defineConfig } = require('@vue/cli-service')
-// module.exports = defineConfig({
-//   transpileDependencies: true,
-//   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
-//   outputDir: 'dist'
-// })
-
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
-  // 这里很重要：GitHub Pages 的路径配置
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  // 只在这里设置publicPath，不要在configureWebpack中重复设置
+  publicPath: './',
   outputDir: 'dist',
   
-  // 确保资源路径正确
-  assetsDir: '',
-  
-  // 配置开发服务器
-  devServer: {
-    port: 8080,
-    open: true
+  // 移除了之前的configureWebpack.output.publicPath配置
+  configureWebpack: {
+    optimization: {
+      splitChunks: {
+        chunks: 'all'
+      }
+    }
   }
 })
