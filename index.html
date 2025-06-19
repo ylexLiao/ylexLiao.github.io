@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YLex Liao | Computer Science Researcher</title>
+    <meta name="description" content="YLex Liao - Computer Science student at Hong Kong Polytechnic University specializing in AI, machine learning, and web development.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="favicon.png" alt="YLex" class="logo-img">
+                <span class="logo-text">YLex Liao</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">YLex Liao</span>
+                </h1>
+                <div class="typing-animation">
+                    <span>Computer Science Student</span>
+                </div>
+                <p class="hero-description">
+                    Currently studying at Hong Kong Polytechnic University, 
+                    passionate about AI, machine learning, and building innovative solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <span class="window-title">welcome.js</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>console.log("Hello, World!");
+const developer = {
+  name: "YLex Liao",
+  skills: ["AI", "ML", "Web Dev"],
+  passion: "Problem Solving"
+};
+
+console.log(developer);</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student at Hong Kong Polytechnic University with a passion for 
+                        artificial intelligence and machine learning. I enjoy tackling complex problems and 
+                        building innovative solutions that make a real impact.
+                    </p>
+                    <p>
+                        My journey in technology has led me to work on diverse projects ranging from 
+                        food recognition systems to game development, always with a focus on learning 
+                        cutting-edge technologies and best practices.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills">
+                                <span class="skill">Python</span>
+                                <span class="skill">JavaScript</span>
+                                <span class="skill">Java</span>
+                                <span class="skill">C++</span>
+                                <span class="skill">HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Technologies & Frameworks</h3>
+                            <div class="skills">
+                                <span class="skill">Vue.js</span>
+                                <span class="skill">React</span>
+                                <span class="skill">Node.js</span>
+                                <span class="skill">TensorFlow</span>
+                                <span class="skill">PyTorch</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Areas of Interest</h3>
+                            <div class="skills">
+                                <span class="skill">Machine Learning</span>
+                                <span class="skill">Computer Vision</span>
+                                <span class="skill">Web Development</span>
+                                <span class="skill">Game Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目部分 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🍽️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Recognition System</h3>
+                        <p>Final Year Project - AI-powered food recognition system using computer vision and deep learning.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ylexliao.github.io/FYP-Food-Recognition-System/" target="_blank">Live Demo</a>
+                            <a href="https://github.com/ylexLiao/FYP-Food-Recognition-System" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🩰</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ballet Pose Recognition</h3>
+                        <p>Microsoft AI & IoT Insider Labs internship project for recognizing and analyzing ballet poses.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ylexLiao/Ballet_pose_recognition" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🎮</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Game Recommendation System</h3>
+                        <p>Personalized game recommendation system based on user preferences and gaming behavior.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ylexLiao/COMP4135-Too-Young-Too-Simple-Game-Recommendation" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🔒</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure File Management</h3>
+                        <p>Web application for secure file encryption, decryption, and key management.</p>
+                        <div class="project-tech">
+                            <span>Web Development</span>
+                            <span>Cryptography</span>
+                            <span>Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ylexLiao/secure-file-management-system" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always interested in discussing new opportunities, collaborations, 
+                        or just chatting about technology. Feel free to reach out!
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:ylexyj.liao@connect.polyu.hk" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/ylexLiao" target="_blank" class="contact-link">
+                        <span class="contact-icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ylexliao" target="_blank" class="contact-link">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 YLex Liao. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
