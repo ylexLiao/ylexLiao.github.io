@@ -1631,3 +1631,25 @@ section {
         padding: 2rem 0;
     }
 }
+
+.mobile-social-container {
+    margin-top: auto !important;
+    padding-top: 2rem;
+}
+
+.mobile-social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.mobile-social {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 481px) {
+    .mobile-social-container {
+        display: none;
+    }
+}
