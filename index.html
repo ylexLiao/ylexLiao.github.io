@@ -66,22 +66,54 @@
         </div>
     </nav>
 
-    <!-- 主页部分 -->
+    <!-- 主页部分 - 优化版本 -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-content">
+            <div class="hero-left">
+                <!-- 只在移动端显示的图片 -->
                 <div class="hero-image-mobile">
                     <img src="img/GitMyIMG.jpeg" alt="YLex Liao" class="profile-image-mobile">
                 </div>
+                
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">YLex Liao</span>
                 </h1>
                 <div class="typing-animation">
-                    <span>Computer Science Student</span>
+                    <span id="typing-text">Computer Science Student</span>
+                    <span class="cursor">|</span>
                 </div>
-                <p class="hero-description">
-                    MSc student at Hong Kong Polytechnic University with a background in Computer Science(AI Concentration) from Hong Kong Baptist University. Passionate about AI, machine learning, and immersive technologies.
-                </p>
+                
+                <!-- 个人卡片移动到这里 -->
+                <div class="hero-profile-card desktop-only">
+                    <div class="profile-card-mini">
+                        <div class="profile-mini-header">
+                            <img src="img/GitMyIMG.jpeg" alt="YLex Liao" class="profile-image-mini">
+                            <div class="profile-info-mini">
+                                <h3>YLex Liao</h3>
+                                <p>Computer Science Student</p>
+                                <div class="profile-location">
+                                    <img src="img/map-pin-icon.svg" alt="" class="location-icon">
+                                    <span>Hong Kong</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-badges">
+                            <div class="floating-badge" style="animation-delay: 0.5s;">
+                                <img src="img/code-icon.svg" alt="" class="badge-icon">
+                                <span>Full Stack Dev</span>
+                            </div>
+                            <div class="floating-badge" style="animation-delay: 1s;">
+                                <img src="img/cpu-icon.svg" alt="" class="badge-icon">
+                                <span>AI & ML</span>
+                            </div>
+                            <div class="floating-badge" style="animation-delay: 1.5s;">
+                                <img src="img/database-icon.svg" alt="" class="badge-icon">
+                                <span>Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number">15+</span>
@@ -96,6 +128,7 @@
                         <span class="stat-label">Technologies</span>
                     </div>
                 </div>
+                
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <img src="img/code-icon.svg" alt="" class="btn-icon">
@@ -107,30 +140,49 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <img src="img/GitMyIMG.jpeg" alt="YLex Liao" class="profile-image">
-                    <div class="profile-info">
-                        <h3>YLex Liao</h3>
-                        <p>Computer Science Student</p>
-                        <div class="profile-location">
-                            <img src="img/map-pin-icon.svg" alt="" class="location-icon">
-                            <span>Hong Kong</span>
+            
+            <!-- Terminal窗口 -->
+            <div class="hero-terminal">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-controls">
+                            <div class="terminal-btn close"></div>
+                            <div class="terminal-btn minimize"></div>
+                            <div class="terminal-btn maximize"></div>
                         </div>
+                        <div class="terminal-title">ylexliao@portfolio ~ %</div>
                     </div>
-                </div>
-                <div class="floating-cards">
-                    <div class="floating-card" style="--delay: 0s">
-                        <img src="img/code-icon.svg" alt="" class="card-icon">
-                        <span>Full Stack Dev</span>
-                    </div>
-                    <div class="floating-card" style="--delay: 1s">
-                        <img src="img/cpu-icon.svg" alt="" class="card-icon">
-                        <span>AI & ML</span>
-                    </div>
-                    <div class="floating-card" style="--delay: 2s">
-                        <img src="img/database-icon.svg" alt="" class="card-icon">
-                        <span>Data Science</span>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">ylexliao@portfolio:~$</span>
+                            <span class="terminal-command">cat about.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="terminal-text">
+                                <div class="typing-line" data-delay="0">
+                                    <span class="key-highlight">Education:</span> MSc student at Hong Kong Polytechnic University
+                                </div>
+                                <div class="typing-line" data-delay="1">
+                                    <span class="key-highlight">Background:</span> Computer Science (AI Concentration) from HKBU
+                                </div>
+                                <div class="typing-line" data-delay="2">
+                                    <span class="key-highlight">Interests:</span> AI, Machine Learning, Immersive Technologies
+                                </div>
+                                <div class="typing-line" data-delay="3">
+                                    <span class="key-highlight">Skills:</span> Deep Learning, Unity (2D & 3D), Full Stack Dev
+                                </div>
+                                <div class="typing-line" data-delay="4">
+                                    <span class="key-highlight">Experience:</span> Microsoft AI Lab, HKBU Research Assistant
+                                </div>
+                                <div class="typing-line" data-delay="5">
+                                    <span class="success-text">✓ Ready to innovate the metaverse!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terminal-line current-line">
+                            <span class="terminal-prompt">ylexliao@portfolio:~$</span>
+                            <span class="terminal-cursor">_</span>
+                        </div>
                     </div>
                 </div>
             </div>

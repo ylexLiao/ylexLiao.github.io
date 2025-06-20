@@ -42,13 +42,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // 打字机效果
-const typingText = document.querySelector('.typing-animation span');
+const typingText = document.querySelector('#typing-text');
 if (typingText) {
     const texts = [
         'MSc in Metaverse Technology',
         'AI & ML Enthusiast',
-        'Problem Solver',
-        'Unity Developer'
+        'Unity Developer',
+        'Full Stack Developer'
     ];
 
     let textIndex = 0;
@@ -84,6 +84,41 @@ if (typingText) {
     window.addEventListener('load', () => {
         setTimeout(typeWriter, 1000);
     });
+}
+
+// Terminal动画效果
+function initTerminalAnimation() {
+    const terminalLines = document.querySelectorAll('.typing-line');
+    
+    if (terminalLines.length === 0) {
+        console.log('No terminal lines found');
+        return;
+    }
+    
+    // 重置所有行的状态
+    terminalLines.forEach(line => {
+        line.style.opacity = '0';
+        line.style.transform = 'translateX(-10px)';
+        line.classList.remove('animate');
+    });
+    
+    // 逐行显示动画
+    terminalLines.forEach((line, index) => {
+        const delay = parseInt(line.getAttribute('data-delay')) || index;
+        setTimeout(() => {
+            line.classList.add('animate');
+            line.style.opacity = '1';
+            line.style.transform = 'translateX(0)';
+        }, delay * 800 + 2000); // 延迟2秒开始，每行间隔0.8秒
+    });
+    
+    // 光标闪烁动画
+    const cursor = document.querySelector('.terminal-cursor');
+    if (cursor) {
+        setInterval(() => {
+            cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+        }, 600);
+    }
 }
 
 // 项目过滤功能
@@ -155,8 +190,16 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// 观察所有需要动画的元素
+// 页面加载完成后初始化所有动画
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing animations...');
+    
+    // 初始化Terminal动画
+    setTimeout(() => {
+        initTerminalAnimation();
+    }, 500);
+    
+    // 观察所有需要动画的元素
     const animatedElements = document.querySelectorAll('.project-card, .skill-category, .contact-link, .achievement-item, .timeline-item');
     
     animatedElements.forEach(el => {
